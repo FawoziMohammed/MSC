@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77181563-8E77-43BE-AFC1-F1F48E2FCD45}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MT</RootNamespace>
+    <AssemblyName>MT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\mmf-2\Desktop\code\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>29C746C97A1A15428C389553F687E1FD53E6BE52</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MT_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SLRDbConnector">
+      <HintPath>..\..\..\Downloads\SLRDbConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Assigning Tasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Assigning Tasks.Designer.cs">
+      <DependentUpon>Assigning Tasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordE.Designer.cs">
+      <DependentUpon>DashbordE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordHR.Designer.cs">
+      <DependentUpon>DashbordHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordIT.Designer.cs">
+      <DependentUpon>DashbordIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordM.Designer.cs">
+      <DependentUpon>DashbordM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashbords\DashbordS.Designer.cs">
+      <DependentUpon>DashbordS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empolyees_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empolyees_Edit.Designer.cs">
+      <DependentUpon>Empolyees_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\LoginF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\LoginF.Designer.cs">
+      <DependentUpon>LoginF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_S\UC_AddTasks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_S\UC_AddTasks.Designer.cs">
+      <DependentUpon>UC_AddTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_IT\UC_AddEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_IT\UC_AddEmployees.Designer.cs">
+      <DependentUpon>UC_AddEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_IT\UC_EditEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_IT\UC_EditEmployees.Designer.cs">
+      <DependentUpon>UC_EditEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_S\UC_Assingen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_S\UC_Assingen.Designer.cs">
+      <DependentUpon>UC_Assingen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_S\UC_EditTasks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\UC_S\UC_EditTasks.Designer.cs">
+      <DependentUpon>UC_EditTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Assigning Tasks.resx">
+      <DependentUpon>Assigning Tasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashbords\DashbordE.resx">
+      <DependentUpon>DashbordE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashbords\DashbordHR.resx">
+      <DependentUpon>DashbordHR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashbords\DashbordIT.resx">
+      <DependentUpon>DashbordIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashbords\DashbordM.resx">
+      <DependentUpon>DashbordM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashbords\DashbordS.resx">
+      <DependentUpon>DashbordS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empolyees_Edit.resx">
+      <DependentUpon>Empolyees_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\LoginF.resx">
+      <DependentUpon>LoginF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\UC_S\UC_AddTasks.resx">
+      <DependentUpon>UC_AddTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\UC_IT\UC_AddEmployees.resx">
+      <DependentUpon>UC_AddEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\UC_IT\UC_EditEmployees.resx">
+      <DependentUpon>UC_EditEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\UC_S\UC_Assingen.resx">
+      <DependentUpon>UC_Assingen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\UC_S\UC_EditTasks.resx">
+      <DependentUpon>UC_EditTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MT_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Edit\" />
+    <Folder Include="Forms\User Controls\UC_E\" />
+    <Folder Include="Forms\User Controls\UC_M\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
